@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Creador de Eventos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="css/clockpicker.css" rel="stylesheet" >
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="imagenes/foodTruck2.jpg" alt="" width="200" height="200">
+    <h2>Creacion de un Evento</h2>
+    <p class="lead">Especifique los detalles del nuevo evento y seleccione los Food Truck candidatos para el mismo.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+    
+    <form class="needs-validation" novalidate="">
+        <div class="mb-3">
+          <label for="address">Nombre</label>
+          <input type="text" class="form-control" id="address" placeholder="nombre del evento" required="">
+          <div class="invalid-feedback">
+            Por favor, ingrese un nombre para el evento.
+          </div>
+        </div>
+     <!-- Ubicacion -->
+      <h4 class="mb-3">Ubicacion</h4>      
+	 	<hr class="mb-4">
+	        <div class="row">
+	          <div class="col-md-6 mb-3">
+	            <label for="direccion">Direccion</label>
+	            <input type="text" class="form-control" id="direccion" placeholder="" required="">
+	            <div class="invalid-feedback">
+	              complete los datos.
+	            </div>
+	          </div>
+	          <div class="col-md-6 mb-3">
+	            <label for="codigopostal">Codigo Postal</label>
+	            <select class="custom-select d-block w-100" id="codigopostal" required="">
+	              <option value="" selected="selected">Choose...</option>
+	              <option>1900</option>
+	            </select>
+	            <div class="invalid-feedback">
+	              Debe seleccionar un codigo postalS.
+	            </div>
+	          </div>
+	        </div>
+	        <div class="row">
+	          <div class="col-md-6 mb-3">
+	            <label for="provincia">Provincia</label>
+	                        <select class="custom-select d-block w-100" id="provincia" required="">
+	              <option value="" selected="selected">Choose...</option>
+	              <option>Buenos Aires</option>
+	            </select>
+	            <div class="invalid-feedback">
+	              Debe seleccionar una provincia.
+	            </div>
+	          </div>
+	          <div class="col-md-6 mb-3">
+	            <label for="geolocalizacion">Geolocalizacion</label>
+	            <input type="text" class="form-control" id="geolocalizacion" placeholder="" required="">
+	            <div class="invalid-feedback">
+	              complete los datos.
+	            </div>
+	          </div>
+	        </div>
+		<hr class="mb-4">
+        <div class="mb-3">
+          <label for="tipoEvento">Tipo de Evento</label>
+             <select class="custom-select d-block w-100" id="tipoEvento" required="">
+                  <option value="" selected="selected">Choose...</option>
+	              <option>Celebracion Privada</option>
+	              <option>Festivales</option>
+	              <option>Eventos</option>
+	              <option>Market Callejeros</option>
+             </select>
+	            <div class="invalid-feedback">
+	              Debe seleccionar un tipo de evento.
+	            </div>
+	    </div> 
+		<div class="row mb-3">
+			<div class="col-sm-4">
+				<label for="fecha"> Ingrese una Fecha: </label>
+				<input type="text" class="form-control datepicker" data-placement="right" data-align="top" data-autoclose="true" readonly="" id="fecha">
+			</div>
+			<div class="col-sm-2">
+				<label for="hora">Ingrese una Hora:</label>
+				<input type="text" class="form-control clockpicker" data-placement="right" data-align="top" data-autoclose="true" readonly="" value="12:00" id="hora">
+			</div>
+		</div>
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+          <div class="invalid-feedback">
+            Por favor ingrese una direccion valida.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono">Telefono de Contacto</label>
+          <input type="text" class="form-control" id="telefono" placeholder="+54 9 0221 4412211" required="">
+          <div class="invalid-feedback">
+            Por favor, ingrese un telefono de contacto.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="descripcion">Descripcion</label>
+          <input type="text" class="form-control" id=""descripcion"" placeholder="ingrese una descripcion de evento" required="">
+          <div class="invalid-feedback">
+            Por favor, ingrese una descripcion para el evento.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="formaDePago">Tipo de Pago</label>
+             <select class="custom-select d-block w-100" id="formaDePago" required="">
+                  <option value="" selected="selected">Choose...</option>
+	              <option>Los asistentes pagan la comida</option>
+	              <option>Los organizadores pagan la comida</option>
+             </select>
+	            <div class="invalid-feedback">
+	              Debe seleccionar un tipo de pago.
+	            </div>
+	    </div>
+	    <button type="button" class="btn btn-danger mb-3"><a href="buscarFoodTruck.html#">Agregar Food Truck</a></button>
+	    <div class="table-responsive">
+		      <table class="table table-hover table-bordered">
+		        <thead class="table-dark">
+		          <tr>
+		            <th>#</th>
+		            <th>Food Truck</th>
+		            <th>Estado Reserva</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td>1</td>
+		            <td>camion pizzero</td>
+		            <td>pendiente</td>
+		          </tr>
+		          <tr>
+		            <td>2</td>
+		            <td>Heladero con ruedas</td>
+		            <td>pendiente</td>
+		          </tr>
+		          <tr>
+		            <td>3</td>
+		            <td>La citruca cervecera</td>
+		            <td>confirmada</td>
+		          </tr>          
+		        </tbody>
+		      </table>
+        </div>  
+        </div>
+        </div>
+
+
+
+
+       
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Terminar y guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2020 Javier Paz</p>
+
+  </footer>
+</div>
+<script src="css/jquery-3.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="formulario_files/bootstrap.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+<script src="css/clockpicker.js"></script>
+<script type="text/javascript">$('.clockpicker').clockpicker();</script>
+
+</body></html>

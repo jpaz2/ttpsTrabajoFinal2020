@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>cargador de Food Truck</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="imagenes/foodTruck.jpg" alt="" width="200" height="200">
+    <h2>Nuevo Food Truck</h2>
+    <p class="lead">Por favor, ingrese los datos del nuevo Food Truck.</p>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12 order-md-1">
+     
+      <form class="needs-validation" novalidate="">
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="firstName">Nombre del Food Truck</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+        </div>
+      <h4> Tipo de Servicio </h4>
+        <hr class="mb-4">
+	        <div class="custom-control custom-checkbox">
+	          <input type="checkbox" class="custom-control-input" id="crepes">
+	          <label class="custom-control-label" for="crepes">crepes</label>
+	        </div>
+	        <div class="custom-control custom-checkbox">
+	          <input type="checkbox" class="custom-control-input" id="sushi">
+	          <label class="custom-control-label" for="sushi">sushi</label>
+	        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="hamburguesas">
+          <label class="custom-control-label" for="hamburguesas">hamburguesas</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="cocinaDeAutor">
+          <label class="custom-control-label" for="cocinaDeAutor">cocina de autor</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="helado">
+          <label class="custom-control-label" for="helado">helado</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="cafe">
+          <label class="custom-control-label" for="cafe">cafe</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="tortas">
+          <label class="custom-control-label" for="tortas">tortas</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="cerveza">
+          <label class="custom-control-label" for="cerveza">cerveza</label>
+        </div>
+        <hr class="mb-4">
+        <div class="mb-3">
+          <label for="descripcion">Descripcion</label>
+          <input type="text" class="form-control" id="descripcion" placeholder="detalle caracteristicas" required="">
+          <div class="invalid-feedback">
+            Por favor ingrese una descripcion del Food Truck.
+          </div>
+        </div>
+		<div class="mb-3">
+          <label for="address">URL de la Web <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address" placeholder="especifique una url si corresponde">  
+        </div>
+		<div class="mb-3">
+          <label for="address">Redes Sociales <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address" placeholder="agregue redes de contacto">  
+        </div>
+
+		<h4 class="mb-3">Galeria de imagenes</h4>	
+		<div class="input-group">
+		  <div class="custom-file">
+		    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+		    <label class="custom-file-label" for="inputGroupFile04">agregar imagenes</label>
+		  </div>
+
+		</div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Terminar y guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© 2020 Javier Paz</p>
+  </footer>
+</div>
+<script src="css/jquery-3.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="formulario_files/bootstrap.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+        <script src="css/form-validation.js"></script>
+
+</body></html>
